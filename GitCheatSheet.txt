@@ -6,4 +6,50 @@ git remote add origin https://github.com/sid28gunner/javalevel1
 git push -f origin master
 
 **************************************************************************************************************88
+2. Working in local environment
+
+> git init
+
+> git status
+  //To check whether something is pending or not.
+
+> git add .
+  //Adds all the files in the staging area
+
+> git commit -m "Second Commit"
+
+> > git log
+  //To check the details of the commit.
+
+> touch .gitignore
+  //ignoring certain types of files and put the type of files you want to ignore
+  
+> git branch myBranch
+
+> git switch myBranch
+
+> touch index.css
+
+> git add .
+
+>  git commit -m "My branch update"
+
+> git checkout master
+
+> git merge myBranch
+
+> git commit -a -m "update in a single command"
+
+//Merge conflicts : Merging master with myBranch say same file name but different text at lines so there will be issue
+   So git will tell you where the problem is arising and you can remove those lines and merge it.
+***************************************************************************************************************************************************
+//Lets say you are working in a repository and you want to move to some other branch but dont want to commit those changes right now but stage those changes
+
+> git add .
+
+> git stash
+
+//Finish your stuff there come to your branch
+
+> git stash apply  
 
