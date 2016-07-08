@@ -1,9 +1,20 @@
+Git : Git is a software version control system. It helps us to code large projects effectively when many coders are are writing code in the same time for the project.
 
-git init
-git add .
-git commit -m Initial commit
-git remote add origin https://github.com/sid28gunner/javalevel1
-git push -f origin master
+>git init
+//Makes your folder ready for git client.This file will be invisible in your folder.
+
+>git add .
+//Add all the saved files in staging area.
+//You can put invidual files by putting .txt, .html .
+
+>git commit -m "Initial commit"
+//Commit means saving your files in the repository and message details will help you to identify individual commits. 
+
+>git remote add origin https://github.com/sid28gunner/javalevel1
+//After you set up your repository you can set the URL of origin 
+
+>git push -f origin master
+//Push all the changes in the origin master(by default master is the manin branch)
 
 **************************************************************************************************************88
 2. Working in local environment
@@ -25,20 +36,26 @@ git push -f origin master
   //ignoring certain types of files and put the type of files you want to ignore
   
 > git branch myBranch
+ //Create a local branch
 
 > git switch myBranch
-
+ //Switch to your local branch
+ 
 > touch index.css
-
+  //Create a index.css file
+  
 > git add .
 
->  git commit -m "My branch update"
+> git commit -m "My branch update"
 
 > git checkout master
+//Moves the git head or move to your master branch
 
 > git merge myBranch
+ //Go to the directory you want to merge the files in this case master and merge myBranch with it.
 
 > git commit -a -m "update in a single command"
+//Single command to add and message
 
 //Merge conflicts : Merging master with myBranch say same file name but different text at lines so there will be issue
    So git will tell you where the problem is arising and you can remove those lines and merge it.
@@ -48,8 +65,9 @@ git push -f origin master
 > git add .
 
 > git stash
+//Add those changes in staging area but don't just commit them till you want to do it.
 
 //Finish your stuff there come to your branch
 
 > git stash apply  
-
+//start from where you have left off.
