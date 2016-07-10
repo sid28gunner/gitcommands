@@ -56,7 +56,7 @@ Git : Git is a software version control system. It helps us to code large projec
 > git branch myBranch
  //Create a local branch
 
-> git switch myBranch
+> git checkout myBranch
  //Switch to your local branch
  
 > touch index.css
@@ -71,13 +71,18 @@ Git : Git is a software version control system. It helps us to code large projec
 
 > git merge myBranch
  //Go to the directory you want to merge the files in this case master and merge myBranch with it.
+ 
+> git mv index.css index1.css
+  //Renames or moves the files
+  
+> git rm index1.css  
 
 > git commit -a -m "update in a single command"
 //Single command to add and message
 
 //Merge conflicts : Merging master with myBranch say same file name but different text at lines so there will be issue
    So git will tell you where the problem is arising and you can remove those lines and merge it.
-***************************************************************************************************************************************************
+*************************************************************************************************************************************
 //Lets say you are working in a repository and you want to move to some other branch but dont want to commit those changes right now but stage those changes
 
 > git add .
