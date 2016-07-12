@@ -1,96 +1,64 @@
-//Setting your git for corporate environment so that you can push your code in your repository  
+GIT Training Document
+GIT: Git is the world’s most popular software version control System just like SVN and zookeeper. All developers and Fortune 500 companies use it for collaboration.
+Prerequisite:
+1.	Open your developer account in https://www.github.com 
+2.	Create a new public repository.
+3.	Note down the repository URL you will need it for pushing and cloning.
 
->git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
-
-change proxyuser to your proxy user
-change proxypwd to your proxy password
-change proxy.server.com to the URL of your proxy server
-change 8080 to the proxy port configured on your proxy server
-
-If you decide at any time to reset this proxy and work without proxy.
-Command to use:
-
-git config --global --unset http.proxy
-Finally, to check the currently set proxy:
-
-git config --global --get http.proxy
-
-****************************************************************************************************************************
-Git : Git is a software version control system. It helps us to code large projects effectively when many coders are are writing code in the same time for the project.
-
->git init
-//Makes your folder ready for git client.This file will be invisible in your folder.
-
->git add .
-//Add all the saved files in staging area.
-//You can put invidual files by putting .txt, .html .
-
->git commit -m "Initial commit"
-//Commit means saving your files in the repository and message details will help you to identify individual commits. 
-
->git remote add origin https://github.com/sid28gunner/javalevel1
-//After you set up your repository you can set the URL of origin 
-
->git push -f origin master
-//Push all the changes in the origin master(by default master is the manin branch)
-
-**************************************************************************************************************88
-2. Working in local environment
-
+Local pc:
+1. Create a project folder like GitTraining in your C or D drive.
+2. Open Gitbash
+3.Migrate to  GitTraining 
+         cd d:   to go to D drive
+         cd GitTraining  to go to GitTraining
+         cd ..   to come out of a folder
+4.Initialise the GitTraining Folder
 > git init
 
-> git status
-  //To check whether something is pending or not.
+5.Add 2 files in it and write your code in it
+>touch file1.txt
+>touch file2.txt
 
-> git add .
-  //Adds all the files in the staging area
+6.Checking the status of your folder means which files are not committed means saved to be pushed later.
+>git status
 
-> git commit -m "Second Commit"
+7.Adding the files in staging area
+>git add .
 
-> > git log
-  //To check the details of the commit.
+8.Comitting the files
+>git commit –m “Initial commit”
 
-> touch .gitignore
-  //ignoring certain types of files and put the type of files you want to ignore
-  
-> git branch myBranch
- //Create a local branch
+9.Checking the history of my Git Work
+>git log
 
-> git checkout myBranch
- //Switch to your local branch
- 
-> touch index.css
-  //Create a index.css file
-  
-> git add .
+10.Branches are used for development purpose where we don’t want to risk our code.
+Branch will contain exact copy of the master 
+>git branch Siddharth
 
-> git commit -m "My branch update"
+11.Switch to Branch
+>git checkout Siddharth
 
-> git checkout master
-//Moves the git head or move to your master branch
+12.Create a file3.txt in it. It will not be visible in master folder. But it will be present in branch
+>touch file3.txt
 
-> git merge myBranch
- //Go to the directory you want to merge the files in this case master and merge myBranch with it.
- 
-> git mv index.css index1.css
-  //Renames or moves the files
-  
-> git rm index1.css  
+13.Now do whatever files you want to add in this folder but before leaving commit everything.
+>git add .
+>git commit –m “Siddharth Initial Commit”
 
-> git commit -a -m "update in a single command"
-//Single command to add and message
+14.Now after checking everything you want to merge it with master folder. So first you have to go to master branch. After merging you don’t need to commit it. 
+>git checkout master
+>git merge Siddharth
 
-//Merge conflicts : Merging master with myBranch say same file name but different text at lines so there will be issue
-   So git will tell you where the problem is arising and you can remove those lines and merge it.
-*************************************************************************************************************************************
-//Lets say you are working in a repository and you want to move to some other branch but dont want to commit those changes right now but stage those changes
+15. You must have kept the URL with you .You will need it now.Its time to push the code
 
-> git add .
+16.Set the proxy for corporate environment
+>git config --global http.proxy http://proxyuser:proxypwd@proxy.cognizant.com:6050
 
-> git stash
-//Add those changes in staging area but don't just commit them till you want to do it.
+17.Set the URL
+>git remote add origin https://github.com/sid28gunner/gitcheck.git
 
-//Finish your stuff there come to your branch
+18.Push the code in repository
+> git push –f origin master
 
-> git stash apply  
-//start from where you have left off.
+19.Cloning from the repository
+> git clone <url>
