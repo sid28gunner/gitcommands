@@ -62,3 +62,12 @@ Branch will contain exact copy of the master
 
 19.Cloning from the repository
 > git clone <url>
+
+20.Forgetting all proxies set 
+>git config --global --unset-all http.proxy
+
+21.Removing files
+>git rm -r *
+>git rm <filename>
+
+22.For adding empty repositories use .gitignore files.
