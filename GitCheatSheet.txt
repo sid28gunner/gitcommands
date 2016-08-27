@@ -24,6 +24,7 @@ Local pc:
 
 7.Adding the files in staging area
 >git add .
+>git add --all
 
 8.Comitting the files
 >git commit –m “Initial commit”
@@ -71,3 +72,9 @@ Branch will contain exact copy of the master
 >git rm <filename>
 
 22.For adding empty repositories use .gitignore files.
+
+23.Git patching
+$git diff>mypatch.patch
+$git diff --cached>mypatch.patch
+$git diff --cached --binary>mypatch.patch
+$git apply mypatch.patch
