@@ -55,6 +55,9 @@ Branch will contain exact copy of the master
 16.Set the proxy for corporate environment
 >git config --global http.proxy http://proxyuser:proxypwd@proxy.cognizant.com:6050
 
+unsetting earlier proxies
+git config --global --unset-all http.proxy
+
 17.Set the URL
 >git remote add origin https://github.com/sid28gunner/gitcheck.git
 
