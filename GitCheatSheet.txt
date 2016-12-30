@@ -58,6 +58,9 @@ Branch will contain exact copy of the master
 unsetting earlier proxies
 git config --global --unset-all http.proxy
 
+getting current proxies
+git config --global --get-all http.proxy
+
 17.Set the URL
 >git remote add origin https://github.com/sid28gunner/gitcheck.git
 
