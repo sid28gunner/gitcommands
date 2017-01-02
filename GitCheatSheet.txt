@@ -67,6 +67,9 @@ git config --global --get-all http.proxy
 18.Push the code in repository
 > git push –f origin master
 
+Pulling the code from repository -----> Go to the master folder
+> git pull
+
 19.Cloning from the repository
 > git clone <url>
 
