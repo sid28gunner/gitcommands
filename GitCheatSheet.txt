@@ -91,3 +91,6 @@ $git apply mypatch.patch
 23.Revert and Reset
 $ git revert <hash code for commit>
 $ git reset --hard <hash code for commit>
+
+24.Git command for increasing buffer size
+$ git config http.postBuffer 524288000
