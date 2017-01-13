@@ -87,3 +87,7 @@ $git diff>mypatch.patch
 $git diff --cached>mypatch.patch
 $git diff --cached --binary>mypatch.patch
 $git apply mypatch.patch
+
+23.Revert and Reset
+$ git revert <hash code for commit>
+$ git reset --hard <hash code for commit>
