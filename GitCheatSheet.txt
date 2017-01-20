@@ -94,3 +94,14 @@ $ git reset --hard <hash code for commit>
 
 24.Git command for increasing buffer size
 $ git config http.postBuffer 524288000
+
+25.For SSL certificate related issues
+$GIT_SSL_NO_VERIFY=true git clone https://soumik8.ghosh8%40cognizant.com@developer.us2.oraclecloud.com/developer38089-ctspaasdomain/s/developer38089-ctspaasdomain_fleetmanagement_12354/scm/fleetmanagement.git
+
+For a single repo making ssl false
+
+git config http.sslVerify false
+
+For all repo i.e making ssl globally false
+
+git config --global http.sslVerify false
