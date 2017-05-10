@@ -107,3 +107,16 @@ For all repo i.e making ssl globally false
 git config --global http.sslVerify false
 
 GIT_SSL_NO_VERIFY=true git clone https://soumik8.ghosh8%40cognizant.com@developer.us2.oraclecloud.com/developer38089-ctspaasdomain/s/developer38089-ctspaasdomain_fleetmanagement_12354/scm/fleetmanagement.git
+
+Proxy Settings: for .bowerrc file in c:/users/493645
+{
+	"proxy":"http://proxy.cognizant.com:6050",
+	"https-proxy":"http://proxy.cognizant.com:6050",
+	"strict-ssl": false
+}
+Proxy Settings: for .npmrc file in c:/users/493645
+{
+proxy=http://proxy.cognizant.com:6050/
+https-proxy=http://proxy.cognizant.com:6050/
+strict-ssl=false
+}
