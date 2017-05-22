@@ -120,3 +120,5 @@ proxy=http://proxy.cognizant.com:6050/
 https-proxy=http://proxy.cognizant.com:6050/
 strict-ssl=false
 }
+
+git reset --hard 0d1d7fc32
