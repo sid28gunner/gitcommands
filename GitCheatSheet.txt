@@ -118,7 +118,7 @@ Proxy Settings: for .npmrc file in c:/users/493645
 {
 proxy=http://proxy.cognizant.com:6050/
 https-proxy=http://proxy.cognizant.com:6050/
-strict-ssl=false
+//It doesnt work in corporate proxy strict-ssl=false
 }
 
 git reset --hard 0d1d7fc32
