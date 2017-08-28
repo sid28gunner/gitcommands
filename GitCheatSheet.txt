@@ -122,3 +122,24 @@ https-proxy=http://proxy.cognizant.com:6050/
 }
 
 git reset --hard 0d1d7fc32
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.m2/settings.xml
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <proxies>
+    <proxy>
+      <id>myproxy</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>proxy.cognizant.com</host>
+      <port>6050</port>
+      <nonProxyHosts>*.google.com|ibiblio.org</nonProxyHosts>
+    </proxy>
+  </proxies>
+
+</settings>
