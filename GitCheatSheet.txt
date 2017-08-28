@@ -138,8 +138,44 @@ git reset --hard 0d1d7fc32
       <protocol>http</protocol>
       <host>proxy.cognizant.com</host>
       <port>6050</port>
+      +++++++++++++++++++++++++++++++++
+      <username></username>
+      <password></password>
+      ++++++++++++++++++++++++++++++++++
       <nonProxyHosts>*.google.com|ibiblio.org</nonProxyHosts>
     </proxy>
   </proxies>
 
 </settings>
+
+*******************************************************************************************************************
+In client maven repo
+pom.xml
+</dependencies>	
+	<repositories>
+		<repository>
+			<id>TEPRepo</id>
+			<name>TEP Repo</name>
+			<url>https://jenkins.unisource.corp/nexus/repository/maven-central/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+		    <id>TEPRepo</id>
+			<name>TEP Repo</name>
+			<url>https://jenkins.unisource.corp/nexus/repository/maven-central/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+</project>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.Install maven zip file.
+2.Set its value in maven --> User settings -->Global settings and user settings
+3.Set its value in maven --> Installations --->add -->{Extracted maven location}
+4.Change jdk to 1.8 in java build path
+5.maven update then install or clean install or build.
