@@ -123,6 +123,7 @@ https-proxy=http://proxy.cognizant.com:6050/
 
 git reset --hard 0d1d7fc32
 
+Maven repo to download jar files : http://repo.maven.apache.org/
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 .m2/settings.xml
 
